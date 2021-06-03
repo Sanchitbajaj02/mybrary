@@ -1,5 +1,5 @@
 {
-  "name": "web-dev-express",
+  "name": "web-dev-mybrary",
   "version": "1.0.0",
   "description": "Web Dev Simplified",
   "main": "server.js",
@@ -8,8 +8,9 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
+  "github": "https://github.com/Sanchitbajaj02/mybrary.git",
   "keywords": [],
-  "author": "",
+  "author": "Sanchit",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",

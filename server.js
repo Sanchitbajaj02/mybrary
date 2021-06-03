@@ -15,6 +15,12 @@ app.set("layout", "layouts/layout");
 app.use(expressLayouts);
 app.use(express.static("public"));
 app.use(express.json());
+app.use(
+  express.urlencoded({
+    limit: "10mb",
+    extended: false,
+  })
+);
 
 // db connection
 const db = require("./database/db");
@@ -26,6 +32,9 @@ db.then(() => {
 
 const indexRouter = require("./routes/index");
 app.use("/", indexRouter);
+
+const authorRouter = require("./routes/authors");
+app.use("/authors", authorRouter);
 
 app.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}`);
