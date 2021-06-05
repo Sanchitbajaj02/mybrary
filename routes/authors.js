@@ -23,7 +23,7 @@ router.get("/", async (req, res) => {
 });
 
 // New author route
-router.get("/new", (req, res) => {
+router.get("/new", async (req, res) => {
   res.render("authors/new", {
     author: new Author(),
   });
@@ -42,7 +42,7 @@ router.post("/", async (req, res) => {
   } catch {
     res.render("authors/new", {
       author: author,
-      errMessage: "Error creating Author",
+      errorMessage: "Error creating Author",
     });
   }
 });
