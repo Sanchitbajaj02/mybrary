@@ -7,7 +7,7 @@ const app = express();
 const expressLayouts = require("express-ejs-layouts");
 const methodOverride = require('method-override');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
