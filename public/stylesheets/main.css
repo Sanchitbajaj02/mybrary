@@ -1,6 +1,6 @@
 @import "shared/variable.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
 /* @import "shared/fonts.css"; */
 @import "shared/header.css";
 @import "shared/buttons.css";
@@ -9,7 +9,7 @@
 @import "shared/book.css";
 
 :root {
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   /* font-family: "Gotham Rounded"; */
   font-size: 20px;
   color: var(--color-text-light);
@@ -41,11 +41,24 @@ body {
 }
 
 .page-header {
-  font-size: 2rem; 
+  font-size: 2rem;
   font-weight: 500;
 }
 
 .error-message {
   color: hsl(var(--color-danger-hue), 100%, 50%);
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+  .inner-container {
+    margin: 0;
+  }
+  .page-header {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }

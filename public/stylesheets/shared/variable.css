@@ -1,5 +1,5 @@
 :root {
-  --color-base-hue: 80;
+  --color-base-hue: 320;
 
   --color-danger-hue-offset: 180;
   --color-danger-hue: calc(
